@@ -1,0 +1,7 @@
+setContentView : 화면에 무엇을 보여줄지 결정하는 함수(메서드)
+R.layout.activity_main : 화면이 사용자에게 어떻게 보일지 결정하는 XML 파일의 위치를 저장
+/app/res/layout/activity_main.xml : 자바 소스에서 R.layout.activity_main라고 입력해 가져올 수 있는 프로젝트 안의 파일. 화면을 구성할 때 사용
+text 속성 : 화면에 보이는 글자 변경
+onClick 속성 : 버튼을 클릭할 때 어떤 함수를 실행할 것인지 지정함
+Intent : 어떤 기능을 실행할 건지 지정함
+Toast : 화면에 잠시 보였다 없어지는 메시지 기능
