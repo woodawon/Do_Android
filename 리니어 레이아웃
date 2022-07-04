@@ -1,0 +1,17 @@
+<gravity>
+layout_gravity : 뷰 정렬 담당 속성
+gravity : 뷰의 내부 내용물에 적용되는 속성
+
+<gravity 정렬 속성 값>
+center_vertical : 세로 기준 중앙
+center_horizontal : 가로 기준 중앙
+fill_vertical : 세로 기준 여유 공간만큼 확대하여 채우기
+fill_horizontal : 가로 기준 여유 공간만큼 확대하여 채우기
+
+* clip_vertical : 대상 객체의 상하 길이가 여유 공간보다 클 경우, 남는 부분 잘라냄
+top|clip_vertical : 아래쪽의 남는 부분 잘라냄
+center_vertical|clip_vertical : 위쪽과 아래쪽 다 남는 부분 잘라냄
+
+* clip_horizontal : 대상 객체의 좌우 길이가 여유 공간보다 클 경우, 남는 부분 잘라냄
+right|clip_horizontal : 왼쪽 남는 부분 잘라냄
+center_horizontal|clip_horizontal : 왼쪽과 오른쪽 다 남는 부분 잘라냄
