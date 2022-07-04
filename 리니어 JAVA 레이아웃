@@ -1,0 +1,16 @@
+<리니어 레이아웃>
+android:orientation="horizontal" // 기본 개념 : orientation
+
+LinearLayout mainLayout = new LinearLayout(this); // mainlayout : 새로 만든 레이아웃
+        mainLayout.setOrientation(LinearLayout.VERTICAL);
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+        );
+
+        Button button1 = new Button(this);
+        button1.setText("Button1");
+        button1.setLayoutParams(params);
+        mainLayout.addView(button1); // button java로 만든 거
+        setContentView(mainLayout); // 새로 만든 mainlayout을 RUN하면 content로 보여지게 함
