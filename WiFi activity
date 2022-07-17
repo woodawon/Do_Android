@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button1 = findViewById(R.id.button3);
-        button1.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView = findViewById(R.id.location);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MenuActivity.class);
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = findViewById(R.id.button4);
-        button2.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView = findViewById(R.id.user);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MenuActivity2.class);
