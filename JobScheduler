@@ -1,0 +1,35 @@
+매니페스트 서비스 
+<service
+            android:name = ".MainActivity"
+            android:enabled = "true"
+            android:exported = "true"
+            android:permission = "android.permission.BIND_JOB_SERVICE"></service>
+
+ @Override
+    public boolean onStartJob(JobParameters jobParameters) {
+        return false;
+    }
+
+    @Override
+    public boolean onStopJob(JobParameters jobParameters) {
+        return false;
+    }
+
+    JobInfo.Builder builder = new JobInfo.Builder(1, new ComponentName(this, MainActivity.class))
+                               .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED);
+    JobInfo info = builder.build();
+
+    JobScheduler scheduler = (JobScheduler)getSystemService(JOB_SCHEDULER_SERVICE);
+    scheduler.schedule(MainActivity);
+    
+    
+JobService.java 파일     
+package com.example.samplenoti;
+
+import android.app.job.JobParameters;
+
+public interface JobService {
+    boolean onStartJob(JobParameters jobParameters);
+
+    boolean onStopJob(JobParameters jobParameters);
+}
